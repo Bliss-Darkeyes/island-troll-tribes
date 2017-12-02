@@ -603,7 +603,19 @@ local item added
             call UnitAddItemByIdSwapped( ITEM_BATTLE_AXE, GetTriggerUnit() )
             call itemLower(1)
         endif
-
+	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        //Battle SpearVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+        if i[0] ==  ITEM_SPEAR and i[1] == ITEM_STEEL_INGOT and i[2] == ITEM_STEEL_INGOT and i[3] == ITEM_MANA_CRYSTAL and i[4] == ITEM_SPIRIT_WIND and i[5] == ITEM_SPIRIT_WATER then
+            call RemoveItem(t[0])
+            call RemoveItem(t[1])
+            call RemoveItem(t[2])
+            call RemoveItem(t[3])
+            call RemoveItem(t[4])
+            call RemoveItem(t[5])
+            call UnitAddItemByIdSwapped( ITEM_BATTLE_SPEAR, GetTriggerUnit() )
+            call itemLower(1)
+        endif
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         //Battle Suit
         if i[0] == ITEM_BATTLE_AXE and i[1] == ITEM_BATTLE_ARMOR and i[2] == ITEM_BATTLE_GLOVES and i[3] == ITEM_BATTLE_SHIELD and i[4] == ITEM_SPIRIT_WIND and i[5] == ITEM_SPIRIT_WATER and BETA then
             call RemoveItem(t[0])
