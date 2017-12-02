@@ -402,6 +402,7 @@ library ID {
 		constant integer ITEM_SMOKE_BOMB              = 'I02A';
 		constant integer ITEM_SONAR_COMPASS           = 'I01S';
 		constant integer ITEM_THISTLES                = 'I020';
+		constant integer ITEM_BATTLE_SPEAR            = 'I051';
 
 		// Witch Doctor's Hut Items
 		constant integer ITEM_CLOAK_OF_FLAMES         = 'I04B';
